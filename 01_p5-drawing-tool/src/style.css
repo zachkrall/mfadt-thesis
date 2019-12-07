@@ -23,6 +23,7 @@ button{
   font-size:inherit;
   appearance: none;
   outline: none;
+  border:0;
 }
 button:disabled{
   opacity:0.3;
