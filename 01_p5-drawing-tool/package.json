@@ -1,0 +1,26 @@
+{
+  "name": "01_p5-drawing-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --hot",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/plugin-transform-spread": "^7.7.4",
+    "@babel/preset-env": "^7.7.5",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.1",
+    "p5": "^0.10.2",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
