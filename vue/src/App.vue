@@ -37,11 +37,11 @@ export default {
 <style>
 @font-face {
   font-family: "IBM Plex Mono";
-  src: url("~@/assets/IBMPlexMono-Regular.ttf") format("truetype");
+  src: url("./assets/IBMPlexMono-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Neue Montreal";
-  src: url("~@/assets/NeueMontreal-Regular.otf") format("opentype");
+  src: url("./assets/NeueMontreal-Regular.otf") format("opentype");
 }
 * {
   margin: 0;
