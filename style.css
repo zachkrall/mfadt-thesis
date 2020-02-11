@@ -1,0 +1,155 @@
+
+nav[data-v-4295d220] {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+
+  background-color: #000;
+  color: #fff;
+  padding: 0.9em 0.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid white;
+}
+ul[data-v-4295d220] {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li[data-v-4295d220] {
+  display: inline-block;
+  list-style: none;
+  margin: 0 1rem 0 0;
+  padding: 0;
+}
+button[data-v-4295d220] {
+  font-size: inherit;
+  color: inherit;
+
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  appearance: none;
+}
+button[data-v-4295d220]:hover {
+  color: #00f;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS for all sections */
+div.content__container[data-v-49781c01] {
+  display: inline-block;
+  height: 100vh;
+  padding-bottom: 10vh;
+  overflow: auto;
+
+  border-right: 1px solid white;
+  width: 80vw;
+
+  padding: 2rem 3rem;
+  white-space: normal;
+}
+@media screen and (max-width: 700px) {
+div.content__container[data-v-49781c01] {
+    width: 100vw;
+}
+}
+div.content__container h1[data-v-49781c01] {
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding-bottom: 2rem;
+}
+
+
+li[data-v-c37fadd2] {
+  list-style: none;
+  position: relative;
+  padding: 2rem 2rem 2rem 4rem;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-color: #333;
+  text-align: center;
+}
+li[data-v-c37fadd2]:last-child {
+  border-bottom: 1px solid #333;
+}
+li div.number[data-v-c37fadd2] {
+  border-width: 0px 1px 1px 0px;
+  border-style: solid;
+  border-color: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.3rem 0.6rem;
+}
+
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url(fonts/IBMPlexMono-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(fonts/NeueMontreal-Regular.otf) format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", sans-serif;
+  background: #000;
+  color: #fff;
+
+  font-size: 120%;
+  line-height: 1.2;
+  letter-spacing: 0.5pt;
+}
+::selection {
+  background: #00f;
+  color: #fff;
+}
+a,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Neue Montreal";
+}
+#horizontal {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  white-space: nowrap;
+}
+
