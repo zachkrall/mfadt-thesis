@@ -5,7 +5,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 // must manually npm install 'vue-template-compiler' for vue-loader to work
 
 module.exports = {
-  entry: ["@babel/polyfill", path.join(__dirname, "_vue", "main.js")],
+  entry: ["@babel/polyfill", path.join(__dirname, "vue", "main.js")],
   output: {
     path: path.join(__dirname),
     filename: "bundle.js"
@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         test: /\.(png|woff|woff2|eot|otf|ttf|svg)$/,
-        use: ["file-loader?name=_vue/assets/[name].[ext]"]
+        use: ["file-loader?name=vue/assets/[name].[ext]"]
       }
     ]
   },
