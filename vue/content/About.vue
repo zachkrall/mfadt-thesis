@@ -1,6 +1,10 @@
 <template>
   <Container id="about">
     <div class="max-width">
+      <img src="/media/design-technology-text.png" style="max-width:80%" />
+
+      <br /><br />
+
       <h1>About</h1>
       <p>
         [ insert title here ] is a live-code performance that uses facial
