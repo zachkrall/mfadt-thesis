@@ -3,8 +3,9 @@
     <div id="horizontal" ref="scroll">
       <About />
       <Experiments />
-      <Research />
-      <Writing />
+      <!-- <Research /> -->
+      <Connections />
+      <!-- <Writing /> -->
     </div>
     <NavBar :sections="sections" />
   </div>
@@ -13,22 +14,24 @@
 <script>
 import NavBar from "./components/NavBar.vue";
 import About from "./content/About.vue";
-import Research from "./content/Research.vue";
+// import Research from "./content/Research.vue";
 import Experiments from "./content/Experiments.vue";
-import Writing from "./content/Writing.vue";
+// import Writing from "./content/Writing.vue";
+import Connections from "./content/Connections.vue";
 
 export default {
   name: "app",
   components: {
     NavBar,
     About,
-    Research,
+    // Research,
     Experiments,
-    Writing
+    // Writing,
+    Connections
   },
   data() {
     return {
-      sections: ["About", "Experiments", "Research", "Writing"]
+      sections: ["About", "Experiments", "Connections"]
     };
   }
 };
@@ -51,7 +54,7 @@ export default {
 
 body {
   font-family: "Times New Roman", sans-serif;
-  background: #000;
+  background: #161616;
   color: #fff;
 
   font-size: 120%;
@@ -82,5 +85,27 @@ h6 {
   overflow-y: hidden;
 
   white-space: nowrap;
+}
+
+p {
+  padding-bottom: 2rem;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  height: 0px;
+  padding-bottom: 53.6%;
+}
+.videoWrapper iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.max-width {
+  max-width: 700px;
 }
 </style>

@@ -14,6 +14,11 @@ export default {
   props: {
     sections: Array
   },
+  data() {
+    return {
+      currentDiv: "about"
+    };
+  },
   methods: {
     // getTime() {
     //   let now = new Date();
@@ -23,10 +28,14 @@ export default {
     //   )}`;
     // }
     scrollTo(matchID) {
+      this.currentDiv = matchID.toLowerCase();
+      this.scrollToCurrent();
+    },
+    scrollToCurrent() {
       // window.console.log(matchID);
       let scroll = this.$parent.$refs.scroll;
       let elm = Array.from(this.$parent.$refs.scroll.children).filter(
-        i => i.id === "content__" + matchID.toLowerCase()
+        i => i.id === "content__" + this.currentDiv
       );
       let offset = elm[0].offsetLeft;
 
@@ -39,8 +48,9 @@ export default {
       // window.console.log(elm);
     }
   },
-  created() {
-    // setInterval(() => (this.time = this.getTime()), 100);
+  mounted() {
+    // this.scrollTo("experiments");
+    window.addEventListener("resize", this.scrollToCurrent);
   }
 };
 </script>
@@ -54,7 +64,7 @@ nav {
   left: 0;
   width: 100vw;
 
-  background-color: #000;
+  background-color: #161616;
   color: #fff;
   padding: 0.9em 0.5em;
 

@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "webpack-dev-server",
     "build": "webpack",
-    "dev": "npm run serve"
+    "serve": "webpack-dev-server"
   },
   "dependencies": {
     "core-js": "^3.4.4",
@@ -28,7 +27,8 @@
     "vue-loader": "^15.8.3",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
   "eslintConfig": {
     "root": true,

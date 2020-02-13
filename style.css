@@ -108,6 +108,33 @@ li div.number[data-v-c37fadd2] {
 }
 
 
+div.grid[data-v-1ea5aa54] {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+.card .image[data-v-1ea5aa54] {
+  /* border: 1px solid white; */
+  margin-bottom: 0.25rem;
+  height: 200px;
+  position: relative;
+}
+.card .image img[data-v-1ea5aa54] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-height: 100%;
+  max-width: 100%;
+  transform: translate(-50%, -50%);
+}
+.card[data-v-1ea5aa54] {
+  color: #999;
+}
+.card[data-v-1ea5aa54]:hover {
+  color: #00f;
+}
+
+
 @font-face {
   font-family: "IBM Plex Mono";
   src: url(fonts/IBMPlexMono-Regular.ttf) format("truetype");
@@ -151,5 +178,8 @@ h6 {
   overflow-y: hidden;
 
   white-space: nowrap;
+}
+p {
+  padding-bottom: 2rem;
 }
 
