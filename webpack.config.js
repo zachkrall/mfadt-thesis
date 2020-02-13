@@ -7,7 +7,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 module.exports = {
   entry: ["@babel/polyfill", path.join(__dirname, "_vue", "main.js")],
   output: {
-    path: path.join(__dirname, ".."),
+    path: path.join(__dirname),
     filename: "bundle.js"
   },
   module: {
