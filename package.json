@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "build": "webpack",
-    "serve": "webpack-dev-server"
+    "dev": "webpack-dev-server"
   },
   "dependencies": {
     "core-js": "^3.4.4",
+    "three": "^0.115.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -25,6 +26,7 @@
     "file-loader": "^5.0.2",
     "mini-css-extract-plugin": "^0.9.0",
     "vue-loader": "^15.8.3",
+    "vue-svg-loader": "^0.16.0",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",

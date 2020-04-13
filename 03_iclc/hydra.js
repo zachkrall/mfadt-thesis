@@ -27,8 +27,35 @@ namesImage = document.createElement('img');
 namesImage.src = atom.project.getPaths()[0] + "/media/names.png";
 s2.init({ src: namesImage, dynamic: false });
 
+faceMesh = document.createElement('video');
+faceMesh.autoplay = true;
+faceMesh.loop = true;
+faceMesh.src = atom.project.getPaths()[0] + "/media/tracker.mp4";
+
+s3.init({ src: faceMesh, dynamic: true });
+
 // ---
 a.show();
+
+src(s3)
+// .diff(
+//   osc(3, 0.1, 900)
+// )
+// .saturate(0)
+.modulatePixelate(o0)
+.modulateScale(
+  noise(.4), ()=>Math.sine(time)
+)
+.diff(
+  s3
+)
+// .mult(
+//   o1().modulateScale(l1().scrollX(0,0.1)), 0.5
+// )
+// .mult(
+//   s3
+// )
+.out();
 
 
 l1 = () => shape(
@@ -122,7 +149,7 @@ face()
 .out();
 
 // GRADIENT FACES
-face()
+
 .modulateHue(
   l1(), 10
 )
@@ -180,17 +207,17 @@ face()
 
 solid(0).out();
 
-.add(shape1()).invert()
-
-.diff(noise(0.1).thresh())
-.out();
-
-.modulateScale(
-  l1().scrollX(0,0.1).modulateScale(o1()), ()=>mouse.x/window.innerWidth * 10
-)
-.saturate(10)
-.scale(()=>a.fft[1]+0.5)
-.out();
+// .add(shape1()).invert()
+//
+// .diff(noise(0.1).thresh())
+// .out();
+//
+// .modulateScale(
+//   l1().scrollX(0,0.1).modulateScale(o1()), ()=>mouse.x/window.innerWidth * 10
+// )
+// .saturate(10)
+// .scale(()=>a.fft[1]+0.5)
+// .out();
 
 
 face()
