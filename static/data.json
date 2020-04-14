@@ -1,0 +1,25 @@
+{
+  "": "",
+  "Connections": [
+    {
+      "image": "/media/joan-jonas.jpg",
+      "caption": "Joan Jonas, Reanimation",
+      "link": ""
+    },
+    {
+      "image": "media/Krzysztof-Wodiczko-Polacy-we-Wloszech.png",
+      "caption": "Krzysztof Wodiczko, Polacy we Wloszech",
+      "link": ""
+    },
+    {
+      "image": "media/Parke-Face-Paint.png",
+      "caption": "Fred Parke, Computer Generated Animation of Faces (1972)",
+      "link": "https://rhizome.org/editorial/2014/jan/20/fred-parke-and-miley-cyrus/"
+    },
+    {
+      "image": "media/haar-features.png",
+      "caption": "Haar-like Features",
+      "link": "https://medium.com/@datitran/face-detection-on-cloud-foundry-37887631096a"
+    }
+  ]
+}
