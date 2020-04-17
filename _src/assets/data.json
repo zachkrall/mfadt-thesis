@@ -4,17 +4,27 @@
     {
       "image": "/media/joan-jonas.jpg",
       "caption": "Joan Jonas, Reanimation",
+      "link": "https://www.youtube.com/watch?v=aJ7uME3LbGc"
+    },
+    {
+      "image": "media/Drone-Krzysztof-Wodiczko.jpg",
+      "caption": "Krzysztof Wodiczko, Loro (Them)",
       "link": ""
     },
     {
-      "image": "media/Krzysztof-Wodiczko-Polacy-we-Wloszech.png",
-      "caption": "Krzysztof Wodiczko, Polacy we Wloszech",
-      "link": ""
+      "image": "media/olivia-jack-hydra.png",
+      "caption": "Olivia Jack, Hydra",
+      "link": "https://ojack.github.io/articles/hydra/index.html"
     },
     {
       "image": "media/Parke-Face-Paint.png",
       "caption": "Fred Parke, Computer Generated Animation of Faces (1972)",
       "link": "https://rhizome.org/editorial/2014/jan/20/fred-parke-and-miley-cyrus/"
+    },
+    {
+      "image": "media/john-whitney.jpg",
+      "caption": "John Whitney-Matrix III (1972)",
+      "link": "https://www.youtube.com/watch?v=ZrKgyY5aDvA"
     },
     {
       "image": "media/haar-features.png",

@@ -3,6 +3,15 @@
   src: url('./IBMPlexMono-Regular.ttf') format('truetype');
 }
 @font-face {
+  font-family: 'IBM Plex Serif';
+  src: url('./IBMPlexSerif-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src: url('./IBMPlexSerif-LightItalic.ttf') format('truetype');
+  font-style: italic;
+}
+@font-face {
   font-family: 'Neue Montreal';
   src: url('./NeueMontreal-Regular.otf') format('opentype');
 }

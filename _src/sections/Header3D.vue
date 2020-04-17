@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="g-full">
     <div class="container" ref="container">
       <canvas ref="three"></canvas>
       <button ref="button" v-on:click="controller">Pause</button>
@@ -68,12 +68,12 @@ export default {
       this.resizeCanvas(width, height)
 
       // transparent
-      this.renderer.setClearColor(0xffffff, 0.0)
+      this.renderer.setClearColor(0xffffff, 1.0)
 
       this.cam.position.set(0, 0, 20)
       this.cam.lookAt(0, 0, 0)
 
-      let geo = new SphereBufferGeometry(8, 10, 10)
+      let geo = new SphereBufferGeometry(5, 10, 10)
       // let mat = new THREE.MeshNormalMaterial({
       //   wireframe: true
       // })
@@ -128,16 +128,18 @@ canvas {
 button {
   font-family: 'Neue Montreal Medium', sans-serif;
   position: absolute;
-  top: 0rem;
+  top: 2rem;
   left: 2rem;
 
   font-size: 0.9rem;
   background: var(--near-white);
   border: 1px solid var(--near-black);
-  border-radius: 1em;
+  border-radius: 5px;
   padding: 0 0.4em;
 
   transition: all ease 0.3s;
+
+  text-transform: uppercase;
 }
 button:hover {
   background: var(--near-black);

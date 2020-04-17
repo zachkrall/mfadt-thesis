@@ -1,35 +1,17 @@
 <template>
   <div id="app" ref="app">
+    <div
+      style="position:absolute;display:inline-block;
+      top:1rem;left:50%;transform:rotate(5deg) translate(-25%,100px); transform-origin: 50% 50%;text-stroke:thin red;color:transparent;font-size: 3rem;font-weight:bold;font-family:'Arial'"
+    >
+      WORK IN PROGRESS
+    </div>
     <div class="grid">
-      <div
-        class="g-full tc"
-        style="font-size:0.8em; letter-spacing:1.5pt;background:var(--near-black);color:var(--white)"
-      >
-        UNDER CONSTRUCTION
-      </div>
+      <TopBar />
 
-      <div class="pa mb g-full flex v-center h-space">
-        <Logo :scale="1.8" />
-        <h2>Zach Krall</h2>
-      </div>
+      <Header />
 
-      <div class="g-half mb">
-        <Header3D />
-      </div>
-
-      <div class="mb pa g-half flex v-center h-center">
-        <div>
-          <h2 style="padding-bottom:0.3em;">
-            A Live-Coding Environment for Creating Visual Art from Facial
-            Meshes.
-          </h2>
-          <a href="javascript:alert('coming soon')" class="pill"
-            >Download PDF</a
-          >
-        </div>
-      </div>
-
-      <div class="pa g-full tc">
+      <div class="pa g-full">
         <ol class="list-inline">
           <li>About</li>
           <li>Process</li>
@@ -37,23 +19,84 @@
         </ol>
       </div>
 
+      <a
+        href="https://github.com/zachkrall/phase-mask/"
+        class="near-white g-half g-full-mobile h50vw h100vw-mobile"
+        style="max-height:500px!important;position:relative;background-color:#1d1d1d;color:#f5f5f5;"
+      >
+        <div style="position:absolute;bottom:2rem;left:2rem;">
+          GitHub &rarr;
+        </div>
+      </a>
+      <a
+        href="javascript:alert('coming soon')"
+        class="near-white g-half g-full-mobile h50vw h100vw-mobile"
+        style="max-height:500px!important;position:relative;background-color:#929292;color:#f5f5f5;"
+      >
+        <div style="position:absolute;bottom:2rem;left:2rem;">
+          View Performance &rarr;
+        </div>
+      </a>
+
+      <Header3D />
+
       <div class="pa g-full">
-        <h3>About</h3>
+        <h2>About</h2>
+        <About />
       </div>
 
       <div class="pa g-full">
-        <h3>Process</h3>
+        <h2>Process</h2>
       </div>
 
-      <div class="pa g-full">
-        <h3>Conections</h3>
-        <Connections :connections="connections" />
+      <div class="pa g-full" style="padding-bottom:0;">
+        <h2>Conections</h2>
       </div>
+
+      <a
+        class="card db pa g-quarter g-half-mobile"
+        v-for="({ link, image, caption }, index) in connections"
+        :key="index"
+        :href="link"
+      >
+        <div class="image sq">
+          <img :src="image" />
+        </div>
+        {{ caption }}
+      </a>
+
+      <!-- END OF GRID -->
     </div>
-    <!-- END OF GRID -->
 
-    <footer class="pa pb2">
-      &copy; {{ new Date().getFullYear() }} Zachary Krall. All Rights Reserved.
+    <footer class="pa" style="background:white;font-size:0.8em">
+      <div class="grid">
+        <div class="pb g-full">
+          <MFADTLogo width="20rem" style="margin-bottom:1em;" />
+          <p class="measure">
+            Submitted in partial fulfillment of the requirements for the degree
+            of Master of Fine Arts in Design and Technology from Parsons School
+            of Design at The New School
+          </p>
+          <p class="measure">Thesis Advisors: John Roach, Barbara Morris</p>
+          <p class="measure">
+            Thank you to: Maxwell Neely-Cohen, Sarah Groff Hennigh-Palermo, Kate
+            Sicchio, Ramsey Nasser, Jessica Garson, Todd Anderson, Char Stiles
+          </p>
+          <p class="measure">
+            This page uses:
+            <a
+              class="link"
+              href="https://pangrampangram.com/products/neue-montreal?variant=8853413593130"
+              >Neue Montreal</a
+            >
+            and <a class="link" href="https://www.ibm.com/plex/">IBM Plex</a>
+          </p>
+        </div>
+        <div class="g-full">
+          &copy; {{ new Date().getFullYear() }} Zachary Krall. All Rights
+          Reserved.
+        </div>
+      </div>
     </footer>
 
     <SmallLogo :visible="scrollY > 100" />
@@ -67,31 +110,37 @@
 </template>
 
 <script>
-import Logo from '~/ui/Logo.vue'
+import Data from '~/assets/data.json'
+
+import Header from '~/sections/Header.vue'
+import Header3D from '~/sections/Header3D.vue'
+
+import About from '~/sections/About.vue'
+import Connections from '~/sections/Connections.vue'
+
+import TopBar from '~/ui/TopBar.vue'
 import SmallLogo from '~/ui/SmallLogo.vue'
-import HeadingText from '~/ui/HeadingText.vue'
-import Scroller from '~/ui/Scroller.vue'
 
-import Header3D from '~/components/Header3D.vue'
-
-import Connections from '~/content/Connections.vue'
+import MFADTLogo from '~/assets/mfadt.svg'
 
 export default {
   name: 'app',
-  components: { SmallLogo, HeadingText, Logo, Connections, Scroller, Header3D },
+  components: {
+    About,
+    Header,
+    MFADTLogo,
+    TopBar,
+    Header3D,
+    Connections,
+    SmallLogo
+  },
   data() {
     return {
-      connections: [],
+      connections: Data['Connections'],
       scrollY: 0
     }
   },
   mounted() {
-    fetch('./_static/data.json')
-      .then(res => res.json())
-      .then(json => {
-        this.connections = json['Connections']
-      })
-
     let app = this.$refs.app
 
     app.addEventListener('scroll', () => {
@@ -126,6 +175,17 @@ h5,
 h6 {
   font-family: 'Neue Montreal Medium', sans-serif;
   font-weight: normal;
+  line-height: 1;
+  padding-bottom: 0.7em;
+}
+
+a.link {
+  color: #666666;
+  text-decoration: none;
+  border-bottom: 1px solid #cccccc;
+}
+a.link:hover {
+  color: #1d1d1d;
 }
 
 p {
@@ -158,5 +218,28 @@ a.pill:hover {
   background: var(--near-black);
   color: var(--near-white);
   cursor: pointer;
+}
+
+a.card {
+  text-align: center;
+  font-size: 0.8em;
+  color: inherit;
+  text-decoration: none;
+  font-family: 'Neue Montreal Medium', sans-serif;
+  color: #929292;
+}
+.image.sq {
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
+  /* border: 1px solid black; */
+}
+.image.sq img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 </style>

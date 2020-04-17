@@ -1,9 +1,6 @@
 <template>
   <div class="container" :style="{ opacity: this.$props.visible ? 1.0 : 0.0 }">
-    <div class="flex">
-      <Graphic class="logo" ref="logo" />
-      <h1>Phase Mask</h1>
-    </div>
+    <Graphic class="logo" ref="logo" />
   </div>
 </template>
 
@@ -46,14 +43,15 @@ div.container {
   color: var(--white);
 
   transition: all ease 0.3s;
+
+  pointer-events: none;
 }
 div.flex {
   display: flex;
   align-items: center;
 }
 .logo {
-  height: 1.5em;
-  margin-right: 0.4em;
+  height: 6rem;
 }
 .logo path {
   fill: var(--blue);

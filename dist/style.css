@@ -1,21 +1,168 @@
 
-div.container[data-v-9ff9bbec] {
+h1[data-v-66e69b52] {
+  color: #929292;
+  padding: 0;
+  margin: 0;
+}
+h1 span[data-v-66e69b52] {
+  color: #1d1d1d;
+}
+
+
+div.container[data-v-4d54bac3] {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 0;
+  padding-bottom: 56.66%;
+  width: 100%;
+  overflow: hidden;
+}
+canvas[data-v-4d54bac3] {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+button[data-v-4d54bac3] {
+  font-family: 'Neue Montreal Medium', sans-serif;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+
+  font-size: 0.9rem;
+  background: var(--near-white);
+  border: 1px solid var(--near-black);
+  border-radius: 5px;
+  padding: 0 0.4em;
+
+  transition: all ease 0.3s;
+
+  text-transform: uppercase;
+}
+button[data-v-4d54bac3]:hover {
+  background: var(--near-black);
+  color: var(--near-white);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS for all sections */
+div.content__container[data-v-0e52ee98] {
   display: inline-block;
+  height: 100vh;
+  padding-bottom: 10vh;
+  overflow: auto;
+
+  border-right: 1px solid white;
+  width: 80vw;
+
+  padding: 2rem 3rem;
+  white-space: normal;
 }
-div.flex[data-v-9ff9bbec] {
-  display: flex;
-  align-items: center;
+@media screen and (max-width: 700px) {
+div.content__container[data-v-0e52ee98] {
+    width: 100vw;
 }
-.logo[data-v-9ff9bbec] {
-  height: 1.5em;
-  margin-right: 0.4em;
 }
-.logo path[data-v-9ff9bbec] {
-  fill: var(--blue);
+div.content__container h1[data-v-0e52ee98] {
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding-bottom: 2rem;
 }
-h1[data-v-9ff9bbec] {
-  font-weight: inherit;
-  font-size: inherit;
+
+
+div[data-v-6f3f2d50] {
+  padding: 0 150px 0 0;
+}
+article[data-v-6f3f2d50] {
+  margin: 0;
+  max-width: 50em;
+  position: relative;
+  font-family: 'IBM Plex Serif', serif;
+  line-height: 1.5;
+}
+article span[data-v-6f3f2d50] {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+sup[data-v-6f3f2d50] {
+  font-family: 'IBM Plex Mono', sans-serif;
+  color: red;
+  width: 1.2em;
+  height: 1.2em;
+  line-height: 1em;
+  text-align: center;
+  padding-top: 0.1em;
+  display: inline-block;
+  font-size: 0.7em !important;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+span.citation[data-v-6f3f2d50] {
+  position: absolute;
+  left: calc(100% + 25px);
+  width: 150px;
+  font-size: 0.7em;
+}
+
+
+div.grid[data-v-4b432ce0] {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+.card .image[data-v-4b432ce0] {
+  /* border: 1px solid white; */
+  margin-bottom: 1rem;
+  height: 200px;
+  position: relative;
+}
+.card .image img[data-v-4b432ce0] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-height: 100%;
+  max-width: 100%;
+  transform: translate(-50%, -50%);
+}
+.card[data-v-4b432ce0] {
+  color: #999;
+}
+.card[data-v-4b432ce0]:hover {
+  color: #00f;
+}
+
+
+div.pa[data-v-0f2f4b9d] {
+  font-size: 0.6em;
+  text-transform: uppercase;
+}
+a[data-v-0f2f4b9d] {
+  border: 1px solid #1d1d1d;
+  border-radius: 5px;
+  padding: 0.1em 0.3em;
+  text-decoration: none;
+  color: #1d1d1d;
+}
+a[data-v-0f2f4b9d]:hover {
+  background-color: #1d1d1d;
+  color: #f5f5f5;
 }
 
 
@@ -27,14 +174,15 @@ div.container[data-v-94f6abfa] {
   color: var(--white);
 
   transition: all ease 0.3s;
+
+  pointer-events: none;
 }
 div.flex[data-v-94f6abfa] {
   display: flex;
   align-items: center;
 }
 .logo[data-v-94f6abfa] {
-  height: 1.5em;
-  margin-right: 0.4em;
+  height: 6rem;
 }
 .logo path[data-v-94f6abfa] {
   fill: var(--blue);
@@ -42,121 +190,6 @@ div.flex[data-v-94f6abfa] {
 h1[data-v-94f6abfa] {
   font-weight: inherit;
   font-size: inherit;
-}
-
-
-div.container[data-v-065e7440] {
-  display: inline-block;
-}
-div.flex[data-v-065e7440] {
-  display: flex;
-  align-items: center;
-}
-.logo[data-v-065e7440] {
-  height: 1.5em;
-  margin-right: 0.4em;
-}
-.logo path[data-v-065e7440] {
-  fill: var(--blue);
-}
-h1[data-v-065e7440] {
-  font-weight: inherit;
-  font-size: inherit;
-}
-
-
-div.scroller[data-v-e4f614ce] {
-  font-size: 0.6em;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  min-width: 100vw;
-  color: var(--black);
-  background: var(--white);
-  overflow-x: hidden;
-  white-space: nowrap;
-
-  mix-blend-mode: difference;
-}
-div.scroller div.inner[data-v-e4f614ce] {
-  padding: 0.5em;
-  display: inline-block;
-}
-div.scroll[data-v-e4f614ce] {
-  position: relative;
-  top: 0;
-  left: 0;
-  animation: scroller-data-v-e4f614ce linear 120s infinite;
-}
-@keyframes scroller-data-v-e4f614ce {
-from {
-    left: 0;
-}
-to {
-    left: -50%;
-}
-}
-
-
-div.container[data-v-29a73bdb] {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 0;
-  padding-bottom: 56.66%;
-  width: 100%;
-  overflow: hidden;
-}
-canvas[data-v-29a73bdb] {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-button[data-v-29a73bdb] {
-  font-family: 'Neue Montreal Medium', sans-serif;
-  position: absolute;
-  top: 0rem;
-  left: 2rem;
-
-  font-size: 0.9rem;
-  background: var(--near-white);
-  border: 1px solid var(--near-black);
-  border-radius: 1em;
-  padding: 0 0.4em;
-
-  transition: all ease 0.3s;
-}
-button[data-v-29a73bdb]:hover {
-  background: var(--near-black);
-  color: var(--near-white);
-  cursor: pointer;
-}
-
-
-div.grid[data-v-9776487a] {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-}
-.card .image[data-v-9776487a] {
-  /* border: 1px solid white; */
-  margin-bottom: 1rem;
-  height: 200px;
-  position: relative;
-}
-.card .image img[data-v-9776487a] {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  max-height: 100%;
-  max-width: 100%;
-  transform: translate(-50%, -50%);
-}
-.card[data-v-9776487a] {
-  color: #999;
-}
-.card[data-v-9776487a]:hover {
-  color: #00f;
 }
 
 
@@ -182,6 +215,16 @@ h5,
 h6 {
   font-family: 'Neue Montreal Medium', sans-serif;
   font-weight: normal;
+  line-height: 1;
+  padding-bottom: 0.7em;
+}
+a.link {
+  color: #666666;
+  text-decoration: none;
+  border-bottom: 1px solid #cccccc;
+}
+a.link:hover {
+  color: #1d1d1d;
 }
 p {
   padding-bottom: 2rem;
@@ -211,5 +254,27 @@ a.pill:hover {
   background: var(--near-black);
   color: var(--near-white);
   cursor: pointer;
+}
+a.card {
+  text-align: center;
+  font-size: 0.8em;
+  color: inherit;
+  text-decoration: none;
+  font-family: 'Neue Montreal Medium', sans-serif;
+  color: #929292;
+}
+.image.sq {
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
+  /* border: 1px solid black; */
+}
+.image.sq img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
