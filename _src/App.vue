@@ -50,7 +50,7 @@
       </div>
 
       <div class="pa g-full" style="padding-bottom:0;">
-        <h2>Conections</h2>
+        <h2>Connections</h2>
       </div>
 
       <a
