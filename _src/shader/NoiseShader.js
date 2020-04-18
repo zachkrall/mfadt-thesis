@@ -1,4 +1,4 @@
-import { Vector2, ShaderMaterial } from 'three'
+import { Vector2, ShaderMaterial, DoubleSide } from 'three'
 import { vert } from './_vert'
 import { frag } from './_frag'
 
@@ -9,6 +9,9 @@ const config = {
     },
     u_amp: {
       value: 8.0
+    },
+    u_resolution: {
+      value: new Vector2(0.0, 0.0)
     }
   },
   defines: {
@@ -17,6 +20,7 @@ const config = {
     HALF_PI: Math.PI * 0.5
   },
   wireframe: false,
+  side: DoubleSide,
   vertexShader: vert,
   fragmentShader: frag
 }
