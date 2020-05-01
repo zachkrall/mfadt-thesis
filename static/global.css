@@ -9,9 +9,12 @@
   --black: #000000;
 
   /* COLORS */
-  --green: #2fa700;
-  --blue: #2366d3;
-  --pink: #ed225d;
+  --yellow: #f4f361;
+  --cyan: #76eeef;
+  --green: #76ed56;
+  --magenta: #d841e3;
+  --red: #de433a;
+  --blue: #2631e6;
 }
 
 ::selection {

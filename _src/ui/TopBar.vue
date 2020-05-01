@@ -5,7 +5,7 @@
       <a href="https://mfadt.parsons.edu">MFADT</a>
     </div>
     <div>
-      <a href="javascript:alert('coming soon')">Download PDF</a>
+      <a href="javascript:alert('coming soon')">Download Thesis PDF</a>
     </div>
   </div>
 </template>

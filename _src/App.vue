@@ -4,56 +4,48 @@
       style="position:absolute;display:inline-block;
       top:1rem;left:50%;transform:rotate(5deg) translate(-25%,100px); transform-origin: 50% 50%;text-stroke:thin red;color:transparent;font-size: 3rem;font-weight:bold;font-family:'Arial'"
     >
-      WORK IN PROGRESS
+      MAY 12th, 2020
     </div>
     <div class="grid">
       <TopBar />
 
       <Header />
 
-      <div class="pa g-full">
-        <ol class="list-inline">
-          <li>About</li>
-          <li>Process</li>
-          <li>Connections</li>
-        </ol>
-      </div>
-
       <a
-        href="https://github.com/zachkrall/phase-mask/"
+        href="https://phasemask.zachkrall.com"
         class="near-white g-half g-full-mobile h50vw h100vw-mobile"
         style="max-height:500px!important;position:relative;background-color:#1d1d1d;color:#f5f5f5;"
       >
         <div style="position:absolute;bottom:2rem;left:2rem;">
-          GitHub &rarr;
+          Phase Mask Editor &rarr;
         </div>
       </a>
       <a
-        href="javascript:alert('coming soon')"
+        href="https://attempting-access.zachkrall.com"
         class="near-white g-half g-full-mobile h50vw h100vw-mobile"
         style="max-height:500px!important;position:relative;background-color:#929292;color:#f5f5f5;"
       >
         <div style="position:absolute;bottom:2rem;left:2rem;">
-          View Performance &rarr;
+          "Attempting Access" Web Performance &rarr;
         </div>
       </a>
 
       <Header3D />
 
-      <div class="pa g-full">
+      <!-- <div class="pa g-full">
         <h2>About</h2>
         <About />
-      </div>
+      </div> -->
 
-      <div class="pa g-full">
+      <!-- <div class="pa g-full">
         <h2>Process</h2>
-      </div>
+      </div> -->
 
-      <div class="pa g-full" style="padding-bottom:0;">
+      <!-- <div class="pa g-full" style="padding-bottom:0;">
         <h2>Connections</h2>
-      </div>
+      </div> -->
 
-      <a
+      <!-- <a
         class="card db pa g-quarter g-half-mobile"
         v-for="({ link, image, caption }, index) in connections"
         :key="index"
@@ -63,7 +55,7 @@
           <img :src="image" />
         </div>
         {{ caption }}
-      </a>
+      </a> -->
 
       <!-- END OF GRID -->
     </div>

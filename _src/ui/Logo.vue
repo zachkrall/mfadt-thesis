@@ -9,6 +9,8 @@
 
 <script>
 import Graphic from '~/assets/logo.svg'
+import { colors } from '~/design.system'
+
 export default {
   name: 'Logo',
   props: {
@@ -23,9 +25,8 @@ export default {
   methods: {
     setColor() {
       let logo = this.$refs.logo.querySelector('path')
-      let color = `${Math.random() * 255}, ${Math.random() *
-        255}, ${Math.random() * 255} `
-      logo.style.fill = `rgba(${color}, 1.0)`
+      let color = colors[parseInt(Math.random() * colors.length)]
+      logo.style.fill = color
     }
   },
   mounted() {

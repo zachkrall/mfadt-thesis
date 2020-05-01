@@ -2,8 +2,8 @@
   <div class="pa g-full measure">
     <Logo width="3em" />
     <h1>
-      <span>Phase Mask</span> is a live-coding environment for making visual art
-      with face tracking geometries
+      <span>Phase Mask</span> is a live-coding environment for creating visual
+      art using facial recognition geometries
     </h1>
   </div>
 </template>
